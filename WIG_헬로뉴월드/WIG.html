@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<title>what is Gender</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  border:1px solid green;
+  background-image : url("WIG.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-color: orange;
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-color: #EE82EE;
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.w3-padding-large {width : 150px;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" 
+       href="javascript:void(0);" onclick="toggleFunction()"
+       title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#mainpage"><button class = "w3-button w3-hover-green w3-text-black w3-hide-teal" style="width:33%">main page</button></a>
+    <a href="#about_team"><button class = "w3-button w3-hover-green w3-text-black w3-hide-teal" style="width:33%">about team</button></a>
+    <a href="#information"><button class = "w3-button w3-hover-green w3-text-black w3-hide-teal" style="width:33%">information</button></a>
+  </div>
+  <!--여기까지 버튼-->
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <p><a href="#mainpage" class="w3-bar-item w3-button" onclick="toggleFunction()">main page</a><button class = "w3-button w3-hover-green w3-text-black w3-hide-teal" style="width:33%">main page</button></p>
+
+<p><a href="#about_team" class="w3-bar-item w3-button" onclick="toggleFunction()">about team</a> <button class = "w3-button w3-hover-green w3-text-black w3-hide-teal" style="width:33%">about team</button></p>
+
+<p> <a href="#information" class="w3-bar-item w3-button" onclick="toggleFunction()">information</a><button class = "w3-button w3-hover-green w3-text-black w3-hide-teal" style="width:33%">information</button></p>
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="mainpage">
+
+  <div class="w3-display-middle" style="white-space:nowrap; background-color:black;" >
+    <span class="w3-center w3-padding-large w3-text-white w3-large w3-wide w3-animate-opacity">
+      what is Gender </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about_team">
+  <h3 class="w3-center"><span style="color:blueviolet">우리 팀은()</span></h3>
+  <p class="w3-center"><em>Nice to meet you</em></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>WIG</b></p><br>
+      <img src="image2.jpg";
+      class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+     <br><br><br><br><br><p>안녕하세요. 팀 WIG(What is Gender)입니다. </p>
+      <p></p>
+      <p>학교에서 성에 대해 배우며 청소년들이 성에 대한 인식이 좋지 않다는 것을 깨달았습니다. 
+          성에 대해 부끄러워 하고, 올바른 성 생활에 대해 청소년, 또한 어른들까지도 모르는 경우가 많습니다. </p>
+      <p></p>
+      <p>이 모든 문제들은 모든 사람들이 꼭 알아야 할 문제라고 생각합니다. 
+          이러한 문제들을 이 앱을 통하여 남녀노소 모두가 올바른 성에 대해 알고 말과 행동을 해야한다고 생각합니다. 
+          이러한 문제를 이 앱을 통해 조금이나마 성은 나쁜 것이 아닐 뿐더러 부끄러워하면 안된다는 것을 알리고, 올바른 성 지식을 알리고 싶습니다.
+        </p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<img src = "taeyong.jpg">;
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide"> INFORMATION </span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="information">
+  <h3 class="w3-center"><span style="color:blueviolet">( )정보</span></h3>
+  <p class="w3-center"><em>얻고 싶으신 정보 버튼 클릭하여 주세요.<br> </em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <!-- <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains"> -->
+    </div>
+
+    <div class="w3-col m3">
+      <!-- <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans"> -->
+    </div>
+
+    <div class="w3-col m3">
+      <!-- <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup"> -->
+    </div>
+
+    <div class="w3-col m3">
+      <!-- <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean"> -->
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <!-- <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist"> -->
+    </div>
+
+    <div class="w3-col m3">
+      <!-- <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter"> -->
+    </div>
+
+    <div class="w3-col m3">
+      <!-- <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train"> -->
+    </div>
+
+    <div class="w3-col m3">
+      <!-- <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing"> -->
+    </div>
+
+      <p><a href="#infor1"><buttonbutton class="w3-btn w3-white w3-border w3-border-orange w3-round-large w3-padding-large" onclick="" style="margin-top:64px"  >
+        피임법</button></a></p>
+
+      <p><a href="#infor2"><buttonbutton class="w3-btn w3-white w3-border w3-border-orange w3-round-large w3-padding-large" style="margin-top:64px">
+        성범죄</button></a></p>
+     
+      <p><a href="#infor3"><buttonbutton class="w3-btn w3-white w3-border w3-border-orange w3-round-large w3-padding-large" style="margin-top:64px">
+      성 인권(LGTBQ)</button> </a></p> 
+ 
+      <p><a href="#infor3"><buttonbutton class="w3-btn w3-white w3-border w3-border-orange w3-round-large w3-padding-large" style="margin-top:64px">
+          Quiz</button> </a></p> 
+         
+     
+  </div>
+</div>
+
+<div>
+    <br><br><br><br><br><br><br>
+ 
+    <div class="w3-panel w3-topbar w3-bottombar w3-border-orange w3-pale-red">
+        <h1 id="infor1"><span style="color:black">피임법</h2>
+      </div>
+      <div class="w3-panel w3-border-bottom ww3-border-blue" style="width:50%">
+     <b><h3><P><span style="color:black"> 1.월경주기법(여성,자연,일시적) :</span></p></h3></b>
+     </div>
+     <p>자신의 월경주기를 28일로 정했을 때 월경예정일 19일 전부터 12일까지를 금욕기라고 합니다. </p>
+     <p>월경예정일 14일 전은 배란일로, 배란일 전 2일은 정자생존기, 배란 후 5일은 난자 생존기 입니다.</p>
+     <p> 하지만 월경주기가 일정하지 않기 때문에 피임률이 낮습니다.</p>
+     <img src="월경주기법.PNG"  onclick="onClick(this)"  alt="Coffee beans"> 
+
+     <div class="w3-panel w3-border-bottom ww3-border-blue" style="width : 50%">
+        <b><h3><P><span style="color:black">2. 기초체온법(여성,자연,일시적) : </span></P></h3></b>
+        </div>
+       <p>1달동안 6~8시간의 안정된 수면을 취한 후 아침 일찍 깨어나, 잠자리에서 나오기 전에 체온계를 입에 물어서 측정한다. </p>
+       <p>저온기에서 고온기로 이행하는 경계가 되는날에는 기초체온이 특별히 낮아진다.</p>
+       <p>이 날을 중심으로 전 2일간과 후 3일간을 배란일이라고 한다.</p>
+       <p>정자의 생존 기간을 3일, 난자의 생존 기간을 1일로 보면 배란 당일 5일 전부터 4일 후까지의 10일간이 임신 가능 기간이다.</p>
+       <p>그러므로 이 기간을 이용해 계획임신을 하거나 피임을 할 수 있지만 하지만 체온이 일정하지 않아 피임률이 낮다.</p>
+
+       <div class="w3-panel w3-border-bottom ww3-border-blue" style="width:50%">
+           <b><h3><P><span style="color:black"> 3. 콘돔(남성,물리적,일시적) : </span></P></h3></b>
+           </div>
+           <p> 성교할 때에 피임이나 성병 예방 등의 목적으로 음경에 씌우는, 라텍스 재질의 얇은 고무 주머니이다.</p>
+           <p> 많은 사람들이 콘돔을 가장 많이 쓴다. </p>
+           <p>콘돔은 인체에 무해하고, 사용이 간편하고, 성병 예방, 구하기 쉽고, 싸고, 피임률이 높다. </p>
+           <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a><span style = "color:red">※주의※</span></a>
+           <ul> 1. 콘돔을 사용할 시 끝 부분을 약간 비틀어서 공기를 완전히 빼낸 후 사용한다.</ul>
+           <ul> 2. 콘돔은 재활용이 되지 않는다.</ul>
+           <ul> 3. 콘돔은 매우 얇기 때문에 잘 찢어질 수 있으므로 주의한다.</ul>
+           <br><br><br>
+           <img src="콘돔.jpg"  onclick="onClick(this)"  alt="Coffee beans"> 
+
+           <div class="w3-panel w3-border-bottom ww3-border-blue" style="width:50%">
+               <b><h3><P><span style="color:black"> 4.질좌제(여성,물리,일시적) :  </span></P></h3></b>
+           </div>
+           <p>성교 10분 ~ 1시간 전에 질 깊숙이 좌약 1개를 삽입한다.</p>
+           <p>이 약 삽입 후 1시간 내에 성교를 하지 못하거나 반복할 때에는 다시 1개를 삽입 할수 있도록 한다.</p>
+           <p>언제 성교를 할 지 정해놓기가 어렵다는 단점이 있다</p>
+           <h4>&nbsp;&nbsp;&ensp;&ensp;&ensp;<span style="color:black">{ 많이 생각할 수 있는 질문 }</span></h4>
+             <ol>1. 정자를 다 죽이는 것인가요? --> 정자가 자궁 안으로 못들어가게 하는 것이다.<br> 정자는 4일~5일 사이에 다 죽는데 그 때 까지 자궁에 못들어가므로 임신을 막아 준다.</ol>
+             <ol>2. 질좌제를 몇시간 전에 넣어야 하나요? --> 성관계 1시간 전에 넣어야 안전하다.</ol>
+
+           <img src="질정제피임약.jpg"  onclick="onClick(this)"  alt="Coffee beans"> 
+       
+           <div class="w3-panel w3-border-bottom ww3-border-blue" style="width:50%">
+               <b><h3><P><span style="color:black">5. 경구피임약(여성,물리,일시적) : </span></P></h3></b>
+           </div>
+         <p>  약을 주기적으로 먹는 것이다. <br> 매일 규칙적으로 같은 시간에 복용합니다.</p>
+         <p> 처음 복용 시 생리 시작 1일차부터 매일 1정을 복용하고 21일 복용 후 7일간 휴약합니다.</p>
+         <p> 휴약 8일째에는 생리 중이라도 다시 복용을 시작합니다. </p>
+         <p>복용을 중지하면 일반적으로 2~3일 내에 생리를 시작합니다. </p>
+         <p>&nbsp;&nbsp;&nbsp;&ensp;&ensp;&ensp;<span style="color:red">※주의※</span></p>
+          <ul> 1. 일정 시간이 지나서 약을 먹으면 효과가 떨어지기 때문에 제시간에 정확하게 먹는다.</ul>
+          <br><br>
+           <img src="경구피임약.PNG" onclick="onClick(this)"  alt="Coffee beans"> 
+
+           <div class="w3-panel w3-border-bottom ww3-border-blue" style="width:50%">
+               <b><h3><P><span style="color:black">6. 루프(여성,물리적,반영구적) :</span> </P></h3></b>
+           </div>
+           <p>미레나 등 루프는 자궁내장치라고 불리며, 자궁강 내에 이물질을 삽입하여 피임효과를 얻는 방법이다.</p>
+           <p> 자궁 내 이물질이 들어가면 염증반응이 일어나 국소적인 자궁내막염이 생기고 이에 의해 수정난이 자궁 내에 착상되는 것을 방해한다.</p>
+           <p>또한, 자궁수축을 일으켜 자궁 자체가 불안정한 상태가 됨으로써 피임효과를 일으킨다.</p> 
+           <p>요즘에는 루프에 화학적 활성체 금속인 동이나 여성호르몬인 황체호르몬을 추가하여 피임효과를 더욱 높이고 있다.</p>
+
+           <h4>&nbsp;&nbsp;&ensp;&ensp;&ensp;<span style="color:black">{ 많이 생각할 수 있는 질문 }</span></h4>
+           <ol>1. 몇년동안 유지가 되는 것인가요? --> 평균적으로 3년에서 5년정도 유지됩니다.</ol>
+           <ol>2. 루프의 종류는 몇가지 인가요? --> 일반적인 구리루프와 생리량을 조절해주는 미레나가 있습니다.</ol>
+           <ol>3. 부작용은 없나요? --> 구리 루프는 골반염, 자궁 외 임신, 하복부 통증이 발생할 수 있으며, 마레나는 시술 후 출혈이 있을 수 있으며, 월경 기간이 짧아지고 월경을 안할 수도 있습니다.</ol>
+           <br><br>
+           <img src="루프.PNG"  onclick="onClick(this)"  alt="Coffee beans"> 
+
+           <div class="w3-panel w3-border-bottom ww3-border-blue" style="width:50%">
+               <b><h3><P><span style="color:black"> 7. 영구 피임법(여성/남성,물리적,영구적) :</span></P></h3></b>
+           </div>
+          <p>정관수술은 남성이 하며 정관을 묶고 잘라 피임하게 되는 방법으로 10분 정도면 끝낼 수 있는 간단한 시술이며, </p>
+          <p>난관수술은 여성이 하며 난관을 잘라 묶는 방법으로 보통 제왕절개수술과 같이 시행하게 됩니다.</p> 
+          <p>여성의 난관수술은 굉장히 힘든 수술이므로 보통 남성이 정관수술을 합니다.</p>
+          <br>
+
+          <h4>&nbsp;&nbsp;&ensp;&ensp;&ensp;&ensp;<span style="color:black">{ 가장 많이 하는 질문 }</span></h4>
+           <ol>정관수술을 하면 사정을 하나요? --> 정자만 나오지 않는 것이지 사정은 합니다. </ol>
+           <ol>난관수술을 하면 생리를 하나요? --> 난자가 못나오게 하는 것이기 때문에 생리는 합니다.</ol>
+
+          <div class="w3-panel w3-border-bottom ww3-border-blue" style="width:50%">
+               <b><h3><P><span style="color:black">8. 응급피임법(여성,물리,일시) :</span></P></h3></b>
+           </div>
+          <p> 응급피임약은 사후피임약이라 하며, 보통 원치 않은 성관계를 가졌을 때 72시간 내 복용, </p>
+          <p> 수정란이 자궁내막 착상을 막아 임신을 피하는 약입니다.</p>
+          <p>사후피임약은 호르몬농도가 경구 피임약보다 4~6배나 되며, 배란 전에는 배란을 지연하거나 방해하기도 합니다.</p>
+          <p> 부작용 위험이 있기 때문에 꼭 전문의와 상담 후 약을 복용해야합니다.</p>
+           
+</div>
+
+<div>
+   <br><br><br><br><br><br><br>
+   <div class="w3-panel w3-topbar w3-bottombar w3-border-amber w3-pale-red">
+     <h1 id="infor2">성범죄</h2>
+   </div>
+   <p>청소년 임신율이 날로 증가하고 있는 추세입니다.</p>
+   <p></p>
+   <p></p>
+   <p>사춘기 청소년들의 강한 성적 요구와 함께 성경험을 하는 사춘기 청소년들의 수가 점점 증가하고 있다. 유엔의 평가에
+     따르면 전 세계적으로 청소년들의 혼전임신은 1980년에 얼마만명이었고 2000년까지는 십만얼마만명으로 증가할것이라고 
+     예측어쩌고햇다. </p>
+
+   <br><br>
+   &nbsp;&nbsp;&nbsp;&ensp;&ensp;&ensp;<span style="color:black"><a>성희롱</span></a>
+   <ol>
+       성희롱은 언어적인 성폭력으로만 생각하는 경우가 많은데, 성희롱은 언어뿐만 아니라 <br>행위도 포함되며 성추행과의 차이는 언어와 행동이 아니라, 조직 내/외의 차이다.
+   </ol>
+   &nbsp;&nbsp;&nbsp;&ensp;&ensp;&ensp;<span style="color:black"><a>성추행</span></a>
+   <ol>
+     성추행은 성욕의 자극, 흥분을 목적으로 일반인의 성적 수치, 혐오의 감정을 느끼게 하는 일체의 행위로,<br> 강제추행은 이러한 추행행위시 폭행 또는 협박과 같은 강제력이 사용되는 경우를 의미한다.
+   </ol>
+   &nbsp;&nbsp;&nbsp;&ensp;&ensp;&ensp;<a><span style="color:black">성폭행</span></a>
+   <ol>
+     상대방의 동의 없이 성관계를 강요하는 것으로, 강간과 강간미수를 포함한다.
+   </ol>
+   <br><br><br>
+   <h4>&ensp;&ensp;&ensp;&ensp;&ensp;<span style="color:black">{ 성폭행을 당했을 때 }</span></h4>
+   <br>
+   <p>&ensp;&ensp;&ensp;&ensp;자신의 피해 사실을 인지하고 정식이 드는 즉시 해바라기 원스톱센터로 연락</p>
+   <p>&ensp;&ensp;&ensp;&ensp;원스톱셑너는 병원과 연계되어 있음.</p>
+   <p>&ensp;&ensp;&ensp;&ensp;성폭력 키트 구비, 응급피입약 처방, 시간 절약과 증거 유실을 막을 수 있음.</p>
+   <p>&ensp;&ensp;&ensp;&ensp;<span style="color:red">씻지 않고 병원 가기</span></p>
+   <p>&ensp;&ensp;&ensp;&ensp;<span style="color:red">먹고 마시지 않고 바로 병원 방문 추천</span></p>
+   <p>&ensp;&ensp;&ensp;&ensp;<span style="color:red">당시의 옷이나 속옷 버리지 않기</span></p>
+   <p>&ensp;&ensp;&ensp;&ensp;<span style="color:red">피해 장소 증거 확보하기.</span></p>
+   <p>&ensp;&ensp;&ensp;&ensp;<span style="color:red">이동 시, 가능한 한 신용카드를 이용하여 결제하기</span></p>
+   <p>&ensp;&ensp;&ensp;&ensp;<span style="color:red">가능하면 72시간 안에 병원을 가기</span></p>
+</div>
+
+
+<div>
+    <br><br><br><br><br><br><br>
+    <div class="w3-panel w3-topbar w3-bottombar w3-border-orange w3-pale-red">
+       <h1 id="infor3">성 인권(LGTBQ)</h2>
+    </div>
+    <p>LGTBQ는 Lesbian, Gay, Transgender, Bisexual and Queer의 약자입니다.</p>
+    <p></p>
+    <p>즉, 동성애자, 성 전환한 사람들, 바이섹슈얼들의 인권을 말하는 것이지요.</p>
+    <p>우리는 어쩌면 이 동성애 어쩌고 어쩌고 쏠라쏠라 블라블라블라블랍륿라바다멍러마ㅓ하엏마ㅓㅏ
+       지금 고요한 타자소리와 마우스소리만 가득한 이방...하하하하하 언제사람들이 들이닥칠지몰랑!  </p>
+</div>
+
+<!-- 여기까지가 내가 아는 최선... 시바롱ㄹㅇㅅ비삽ㄹㅂ시발-->
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>zx
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white">QUIZ</span>
+  </div>
+</div>
+
+<script language="javascript">
+    var delay=10; //시간설정
+    var correctAnswers=new Array("b","b","b","b","b");  //정답
+    
+    var commentary = new Array("가임 기간이 아니라고 해서 100% 임신을 피할 수 있는 것은 아니다.","복용 시간을 정확히 지켜 복용해야 한다.",
+                               "'NO means NO.'.","자신의 의자를 정확히 밝혀야 한다.",
+                               "처녀막은 아동기와 청소년기를 거치면서 처녀막은 유지되기도 하고 자연스럽게 파열되기도 한다. 현실에서는 처녀막의 유무는 처녀성을 입증하는데 전혀 중요하지 않다고 할 수 있다.") 
+    
+    var q_num=1;
+    var timer;
+    var layer;
+    var clock=delay;
+    var score=0;
+    
+    function show_question(){
+      if (layer=eval("document.all.question"+q_num)){
+        layer.style.display="inline";
+        document.all.timeLeft.innerHTML=clock;
+        hide_question();
+      } else {
+        document.all.timeLeft.innerHTML=0;
+        document.all.quizScore.innerHTML="당신은 "+(q_num-1)+"문제중 "+score+"개를 맞췄습니다.";
+        document.all.quizScore.style.display="inline";
+      }
+    }
+    
+    function hide_question(){
+      if (clock>0) {
+        document.all.timeLeft.innerHTML=clock;
+        clock--;
+        timer=setTimeout("hide_question()",1000);
+      } else {
+        clearTimeout(timer);
+        document.all.answerBoard.innerHTML=" ";
+        clock=delay;
+        layer.style.display="none";
+        q_num++;
+        show_question();
+      }
+    }
+    
+    function check_answer(answer){
+      if (correctAnswers[q_num-1]==answer){
+
+        score++;
+        //console.log("score : " + score);
+        document.all.answerBoard.innerHTML="<font color=blue><b>정답입니다.</b></font>";
+      } else {
+        document.all.answerBoard.innerHTML="<font color=red><b>땡! 틀렸습니다. <br> </b></font> <font color=black><b>해설 : </b></font>" + commentary[q_num-1];
+      }
+      clock=0;
+      clearTimeout(timer);
+      timer=setTimeout("hide_question()",700);
+    }
+    
+    window.onload=show_question;
+    </script>
+    </head>
+    
+    <body>
+    
+        &nbsp;&nbsp;&nbsp;제한시간 : <B><span id="timeLeft"></span></B> 초<br>
+    <br>
+    <div id="answerBoard"> </div>
+    <br>
+    
+    <div id="question1" style="display:none">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4>1. 임신이 가능한 시기는 생리가 끝난 날과 다음 생리가 시작되는 날의 중간이다?</h3><br>
+          &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="check_answer('a')">a) O </a><br>
+          &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="check_answer('b')">b) X</a><br>
+    </div>
+    
+    <div id="question2" style="display:none">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4>2. 경구피임약은 복용을 중지하더라도 최소 일주일간은 피임이 가능하다?</h4><br>
+        &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="check_answer('a')">a) O </a><br>
+        &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="check_answer('b')">b) X</a><br>
+    </div>
+    
+    <div id="question3" style="display:none">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4>3. 데이트 시 신체접촉과 성관계 요구에 대해 여성이 'NO'라고 말하는 것은 내숭이다?</h4><br>
+        &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="check_answer('a')">a) O </a><br>
+        &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="check_answer('b')">b) X</a><br>
+    </div>
+    
+    <div id="question4" style="display:none">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4>4. 상대방이 성관계를 하자고 하면 무조건 해야한다?</h4><br>
+        &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="check_answer('a')">a) O </a><br>
+        &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="check_answer('b')">b) X</a><br>
+    </div>
+    
+    <div id="question5" style="display:none">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4>5. 처녀막이 없거나 손상된 사람은 성경험이 있는 사람이다?</h4><br>
+        &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="check_answer('a')">a) O </a><br>
+        &nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" onclick="check_answer('b')">b) X</a><br>
+    </div>
+    
+    <div id="quizScore" style="display:none">
+    </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-hover-green"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+</body>
+</html> 
