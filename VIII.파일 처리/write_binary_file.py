@@ -6,3 +6,4 @@ byte_arr = bytes([255,0,127])   #3개를 저장했으니까 3byte
 f.write(byte_arr)
 f.close()
 
+#바이너리랑 
