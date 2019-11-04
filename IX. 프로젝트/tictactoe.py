@@ -41,6 +41,6 @@ class TicTacToe:
         s = ""
         for i,v  in enumerate(self.board):   #enumerate값이랑 다가져오는 것
             s += v
-            if 9 % 3 == 2:
+            if i % 3 == 2:
                 s += "\n"
         return s
