@@ -7,10 +7,17 @@ from urllib.request import urlopen
 if __name__ == '__main__':
     #네이버웹툰 > 원수를 사랑하라 제목을 가져오자
     data = urlopen("https://comic.naver.com/webtoon/list.nhn?titleId=733079")
-    soup = BeautifulSoup(data, "lxml")
+    soup = BeautifulSoup(data, "lxml")      #httpResponse -> HTML
     # print(soup)
 
-    cartoon_titles = soup.find_all("td", attrs={"class":"title"})
-    for cartoon_titles in cartoon_titles:
-        title = cartoon_titles.find("a").text
+    cartoon_titles = soup.find_all("td", attrs={"class":"title"})   #<td class="title">...</td>
+    for cartoon_titles in cartoon_titles:                   # cartoon_titles[:2]를 해서 원하는 화까지 정할수 있음
+                                                            #가장 최신화하려면
+        title = cartoon_titles.find("a").text                   #텍스트 가져오기.<a>text</a>
+        link = cartoon_titles.find("a").get("href")             #태그의 속성값 가져오기.<a href="">text</a>
+        link = "https://comic.naver.com" + link
         print(title)
+        print(link)
+
+
+
