@@ -2,9 +2,9 @@ from school import School
 from office import Office
 from public import Public 
 from life import Life
+
 class Order:
     # def menu(self):
-     
     def order_question(self):
             #반복↓
         
