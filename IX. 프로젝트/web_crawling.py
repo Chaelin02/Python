@@ -9,7 +9,7 @@ if __name__ == '__main__':
     data = urlopen("https://comic.naver.com/webtoon/list.nhn?titleId=733079")
     soup = BeautifulSoup(data, "lxml")      #httpResponse -> HTML
     # print(soup)
-
+    html = "<html><head><meta charset='utf-8'></head><body>"
     cartoon_titles = soup.find_all("td", attrs={"class":"title"})   #<td class="title">...</td>
     for cartoon_titles in cartoon_titles:                   # cartoon_titles[:2]를 해서 원하는 화까지 정할수 있음
                                                             #가장 최신화하려면
@@ -18,6 +18,10 @@ if __name__ == '__main__':
         link = "https://comic.naver.com" + link
         print(title)
         print(link)
-
-
+        html += "<a html='{}'> {} </a><br>".format(link,title)      #<a href='Link'>title</a>
+    html += "</body></html>"
+    # print(html)
+    
+    with open("원수를 사랑하라.html","w",encoding="utf-8") as f:        #html 파일 만들자
+        f.write(html)
 
