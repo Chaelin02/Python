@@ -8,6 +8,7 @@ if __name__ == '__main__':
     #네이버웹툰 > 원수를 사랑하라 제목을 가져오자
     data = urlopen("https://comic.naver.com/webtoon/list.nhn?titleId=733079")
     soup = BeautifulSoup(data, "lxml")      #httpResponse -> HTML
+    data.close()
     # print(soup)
     html = "<html><head><meta charset='utf-8'></head><body>"
     cartoon_titles = soup.find_all("td", attrs={"class":"title"})   #<td class="title">...</td>
