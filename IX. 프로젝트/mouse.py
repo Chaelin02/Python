@@ -3,4 +3,4 @@ import pyautogui as pag
 if __name__ == '__main__':
     while True:
         x,y = pag.position()
-        print(x,y)    #498 , 47
+        print(x,y) 
